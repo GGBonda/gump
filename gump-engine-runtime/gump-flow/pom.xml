@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.junhui</groupId>
+        <artifactId>gump-engine-runtime</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>gump-flow</artifactId>
+    <name>gump-flow</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>gump-flow-compiler</module>
+        <module>gump-flow-core</module>
+        <module>gump-flow-steps</module>
+        <module>gump-flow-poet</module>
+        <module>gump-flow-client</module>
+        <module>gump-flow-log</module>
+    </modules>
+
+    <properties>
+        <javapoet.version>1.13.0</javapoet.version>
+        <antlr.version>4.9.3</antlr.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junhui</groupId>
+                <artifactId>gump-flow-steps</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junhui</groupId>
+                <artifactId>gump-flow-compiler</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junhui</groupId>
+                <artifactId>gump-flow-poet</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junhui</groupId>
+                <artifactId>gump-flow-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup</groupId>
+                <artifactId>javapoet</artifactId>
+                <version>${javapoet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-runtime</artifactId>
+                <version>${antlr.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+
+
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

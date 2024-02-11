@@ -1,0 +1,33 @@
+{
+    "presets": [
+        "@babel/preset-react", "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-optional-chaining",
+        [
+            "import", 
+            {
+                "libraryName" : "antd",
+                "style" : "css"
+            }
+        ],
+        [
+            "@babel/transform-runtime",
+            {
+                "helpers": true,
+                "corejs": false,
+                "regenerator": true,
+                "useESModules": false,
+                "absoluteRuntime": false,
+                "version": "^7.14.6"
+            }
+        ],
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ]
+    ]
+}
+
