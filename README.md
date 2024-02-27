@@ -18,3 +18,6 @@
 
 前后端启动后打开浏览器，访问地址：http://localhost:8000/jarvis.htm?appCode=TestApp 即可。
 
+设计思想介绍
+
+https://mp.weixin.qq.com/s?__biz=MzU2ODg5OTU3OQ==&mid=2247484044&idx=1&sn=f16e54eca14b96426abe09cf839d0e5a&chksm=fc87a018cbf0290efa2157e2e8fb108cdf943c4f3048206c1a56caa86dbeb10a3d8e5d6228c8&token=1588134124&lang=zh_CN#rd
